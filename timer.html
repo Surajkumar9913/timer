@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #EEEDEB;
+        }
+
+        .container {
+            background: content-box radial-gradient(crimson, skyblue);
+            width: 50%;
+            height: auto;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            
+            
+        }
+        
+        .main {
+            padding: 0px 50px 10px 50px;
+            display: flex;
+            margin: auto;
+        }
+
+        .timer {
+            width: 100px;
+            height: 50px;
+            border: 1px solid rgb(30, 30, 30);
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(215, 215, 215);
+        }
+
+        button {
+            margin: 10px;
+            border: 1px solid rgb(111, 111, 111);
+            padding: 5px 20px;
+            background-color: rgb(255, 76, 76);
+            color: wheat;
+            cursor: pointer;
+            transition: 0.3s all;
+        }
+        button:hover{
+            background-color: rgb(245, 64, 64);
+            color: rgb(43, 43, 43);
+            border: 1px solid rgb(43,43,43);
+        }
+ @media (max-width: 768px) {
+            .container {
+                width: 50%;
+                padding: 15px;
+            }
+
+            .main {
+                padding: 0px 30px 10px 30px;
+            }
+
+          
+
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Timer</h1>
+        <div class="main">
+
+            <div class="timer" id="hour">0</div>
+            <div class="timer" id="minute">0</div>
+            <div class="timer" id="seconds">0</div>
+        </div>
+        <button id="start" onclick="display()">Start</button>
+    </div>
+    
+    <script src="timer.js" ></script>
+
+</body>
+
+</html>
