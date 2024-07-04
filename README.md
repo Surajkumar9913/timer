@@ -50,6 +50,3 @@ To set up the project locally, follow these steps:
 - Click the "Start" button to begin the timer.
 - The timer will display the elapsed time in hours, minutes, and seconds.
 
-## License
-
-This project is licensed under the MIT License.
